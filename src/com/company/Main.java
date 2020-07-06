@@ -20,12 +20,12 @@ public class Main {
     }
     static String TimeConversion(String s){
         int hour = Integer.parseInt(s.substring(0,2));
-
+        //test modification
         if (s.contains("PM")){
             if (hour == 12){
                 return s.substring(0,8);
             }else {
-                hour = hour + 12;
+                hour = hour + 12;   
             }
             s = hour + s.substring(2,8);
         }else if (s.contains("AM")) {
